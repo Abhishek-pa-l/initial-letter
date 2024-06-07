@@ -1,0 +1,174 @@
+<mvc:View
+    controllerName="com.kpo.initialletterforgoods.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:uxap="sap.uxap"
+    xmlns:core="sap.ui.core"
+    xmlns:semantic="sap.f.semantic"
+    xmlns:u="sap.ui.unified"
+    xmlns:f="sap.ui.layout.form"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <uxap:ObjectPageLayout
+                id="ObjectPageLayout"
+                upperCaseAnchorBar="false"
+                showAnchorBar="true"
+                enableLazyLoading="true"
+            >
+                <uxap:sections>
+                    <uxap:ObjectPageSection
+                        id="_IDGenObjectPageSection1"
+                        showTitle="false"
+                    >
+                        <uxap:subSections>
+                            <uxap:ObjectPageSubSection
+                                id="_IDGenObjectPageSubSection1"
+                                title="General Info "
+                            >
+                                <uxap:blocks>
+                                    <f:SimpleForm
+                                        id="_IDGenSimpleForm1"
+                                        editable="true"
+                                        layout="ResponsiveGridLayout"
+                                        labelSpanXL="4"
+                                        labelSpanL="8"
+                                        labelSpanM="4"
+                                        labelSpanS="12"
+                                        adjustLabelSpan="false"
+                                        emptySpanXL="0"
+                                        emptySpanL="0"
+                                        emptySpanM="0"
+                                        emptySpanS="0"
+                                        columnsXL="3"
+                                        columnsL="2"
+                                        columnsM="2"
+                                        singleContainerFullSize="false"
+                                    >
+                                        <Label text="General Email:" />
+                                        <Input value="abc@test.com" />
+                                        <Label text="Supplier:" />
+                                        <Input value="123456 Name" />
+
+                                        <Label text="Contract:" />
+                                        <Input value="23/С/3456 Description" />
+
+                                        <Label text="Call-off:" />
+                                        <Input value="23/С/3456 Description" />
+
+                                        <Label text="Call-off Notice form:" />
+                                        <Input value="Display or Download form to PC" />
+
+                                        <Label text="Amount:" />
+                                        <Input value="123.45" />
+
+                                        <Label text="Incoterm 2:" />
+                                        <Input value="DDP/EXW/FCA" />
+
+                                        <Label text="Incoterm 2:" />
+                                        <Input value="" />
+
+                                        <Label text="Status:" />
+                                        <Input value="Awaiting initial letter send/Initial letter send" />
+
+                                        <Label text="History:" />
+                                        <Input value="" />
+
+                                        <Label
+                                            text="Contractual Delivery Date:"
+                                        />
+                                        <DatePicker ></DatePicker>
+
+                                        <Label text="Inspection Level:" />
+                                        <Input value="N, 1, 2" />
+
+                                        <Label
+                                            text="List of required documents:"
+                                        />
+                                        <Input value="" />
+                                    </f:SimpleForm>
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+                        </uxap:subSections>
+                        <uxap:subSections>
+                            <uxap:ObjectPageSubSection
+                                id="_IDGenObjectPageSubSection2"
+                                title="Focal Point Details"
+                            >
+                                <uxap:blocks>
+                                    <Table
+                                        items=""
+                                        id="t1"
+                                        mode="MultiSelect"
+                                        class=""
+                                    >
+                                        <headerToolbar>
+                                            <OverflowToolbar
+                                                id="_IDGenOverflowToolbar1"
+                                            >
+                                                <Title
+                                                    id="_IDGenTitle1"
+                                                    text="Approver"
+                                                />
+                                                <ToolbarSpacer
+                                                    id="_IDGenToolbarSpacer1"
+                                                />
+                                                <Button
+                                                    id="_IDGenButton1"
+                                                    icon="sap-icon://add"
+                                                    press="onAddItemPressApprover"
+                                                />
+                                                <Button
+                                                    id="_IDGenButton2"
+                                                    icon="sap-icon://delete"
+                                                    press="onDeleteItemPressApprover"
+                                                />
+                                            </OverflowToolbar>
+                                        </headerToolbar>
+
+                                        <columns>
+                                            <Column id="c1">
+                                                <Text
+                                                    text="Additional Supplier Recipients"
+                                                    id="txt1"
+                                                />
+                                            </Column>
+                                        </columns>
+                                        <items>
+                                            <ColumnListItem
+                                                id="_IDGenColumnListItem1"
+                                                vAlign="Middle"
+                                            >
+                                                <cells>
+                                                    <Text />
+                                                </cells>
+                                            </ColumnListItem>
+                                        </items>
+                                    </Table>
+                                </uxap:blocks>
+                            </uxap:ObjectPageSubSection>
+                        </uxap:subSections>
+                    </uxap:ObjectPageSection>
+                </uxap:sections>
+            </uxap:ObjectPageLayout>
+        </content>
+         <footer>
+            <OverflowToolbar id="_IDGenOverflowToolbar2">
+                <ToolbarSpacer id="_IDGenToolbarSpacer2" />
+                <Button
+                    id="_IDGenButton7"
+                    text="Submit"
+                    press="onNominate"
+                />
+                <Button
+                    id="_IDGenButton8"
+                    text="Cancel"
+                />
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</mvc:View>
